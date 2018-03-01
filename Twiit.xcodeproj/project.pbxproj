@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E2CF3602048424200795E92 /* TweetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2CF35F2048424200795E92 /* TweetMessage.swift */; };
 		3EAA148A20482B1100353D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA148920482B1100353D32 /* AppDelegate.swift */; };
 		3EAA149120482B1100353D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAA149020482B1100353D32 /* Assets.xcassets */; };
 		3EAA149420482B1100353D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAA149220482B1100353D32 /* LaunchScreen.storyboard */; };
+		3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA14A5204840A500353D32 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E2CF35F2048424200795E92 /* TweetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetMessage.swift; sourceTree = "<group>"; };
 		3EAA148620482B1100353D32 /* Twiit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twiit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAA148920482B1100353D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EAA149020482B1100353D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EAA149320482B1100353D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EAA149520482B1100353D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EAA14A5204840A500353D32 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +54,12 @@
 		3EAA148820482B1100353D32 /* Twiit */ = {
 			isa = PBXGroup;
 			children = (
+				3EAA14A82048412A00353D32 /* Entities */,
+				3EAA14A72048412400353D32 /* Network */,
 				3EAA14A020482B6700353D32 /* Modules */,
+				3EAA149B20482B2100353D32 /* System */,
 				3EAA149F20482B4F00353D32 /* Storyboards */,
 				3EAA149E20482B4600353D32 /* Images */,
-				3EAA149B20482B2100353D32 /* System */,
 			);
 			path = Twiit;
 			sourceTree = "<group>";
@@ -102,8 +108,56 @@
 		3EAA14A020482B6700353D32 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3EAA14A5204840A500353D32 /* AppCoordinator.swift */,
+				3EAA14A12048404800353D32 /* Intro */,
+				3EAA14A22048405000353D32 /* Login */,
+				3EAA14A32048405E00353D32 /* TweetList */,
+				3EAA14A42048409400353D32 /* TweetDetail */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		3EAA14A12048404800353D32 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		3EAA14A22048405000353D32 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3EAA14A32048405E00353D32 /* TweetList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TweetList;
+			sourceTree = "<group>";
+		};
+		3EAA14A42048409400353D32 /* TweetDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TweetDetail;
+			sourceTree = "<group>";
+		};
+		3EAA14A72048412400353D32 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3EAA14A82048412A00353D32 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3E2CF35F2048424200795E92 /* TweetMessage.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +170,7 @@
 				3EAA148220482B1100353D32 /* Sources */,
 				3EAA148320482B1100353D32 /* Frameworks */,
 				3EAA148420482B1100353D32 /* Resources */,
+				3E15F9FA20485A2D00AF09B8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -172,11 +227,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E15F9FA20485A2D00AF09B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EAA148220482B1100353D32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */,
+				3E2CF3602048424200795E92 /* TweetMessage.swift in Sources */,
 				3EAA148A20482B1100353D32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RD9CUBAH;
-				INFOPLIST_FILE = Twiit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Twiit/System/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GMANC.Twiit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RD9CUBAH;
-				INFOPLIST_FILE = Twiit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Twiit/System/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GMANC.Twiit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
