@@ -1,5 +1,5 @@
 //
-//  APIResult.swift
+//  File.swift
 //  Twiit
 //
 //  Created by Guilherme Coelho on 3/1/18.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol APIResult {
+enum Tokens {
 
-  case success(Data)
-  case failure(NetworkError)
+  static let googleTkn:[UInt8] = []
+  static let twitterTkn:[UInt8] = []
 
 }

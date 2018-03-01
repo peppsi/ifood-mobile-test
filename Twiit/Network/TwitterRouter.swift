@@ -15,7 +15,7 @@ enum TwitterRouter: URLRequestConvertible {
 
 }
 
-extension TwitterRouter: TargetType {
+extension TwitterRouter {
 
   var path: String {
     switch self {
@@ -43,10 +43,10 @@ extension TwitterRouter: TargetType {
     switch self {
 
     case .authorize:
-      return  "Basic \(TwitterEnviroment.basicToken)"
+      return  "Basic token"
 
     case .retrieveTweets:
-      return "Bearer \(TwitterEnviroment.bearerToken)"
+      return "Bearer token"
     }
   }
 
@@ -87,7 +87,7 @@ extension TwitterRouter: TargetType {
 
     }()
 
-    let url = self.path
+    let url = URL(fileURLWithPath: self.path)
 
     var request = URLRequest(url: url)
 
@@ -101,7 +101,8 @@ extension TwitterRouter: TargetType {
 
     request.timeoutInterval = TimeInterval(10 * 1000)
 
-    return try URLEncoding.default.encode(request, with: parameters)
+    return try URLEncoding.default.encode(request,
+                                          with: parameters)
   }
 
 }
