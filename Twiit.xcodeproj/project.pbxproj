@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E15FA0C2048650B00AF09B8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0B2048650B00AF09B8 /* App.swift */; };
 		3E15FA0F2048653C00AF09B8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */; };
-		3E15FA11204865BC00AF09B8 /* APIGoogleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA10204865BC00AF09B8 /* APIGoogleRouter.swift */; };
 		3E15FA1A204865E200AF09B8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E15FA1C204865E200AF09B8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E15FA1E204865E200AF09B8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		3E15FA0B2048650B00AF09B8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		3E15FA10204865BC00AF09B8 /* APIGoogleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGoogleRouter.swift; sourceTree = "<group>"; };
 		3E15FA13204865DB00AF09B8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		3E15FA14204865DB00AF09B8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		3E15FA15204865DB00AF09B8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -273,7 +271,6 @@
 			children = (
 				3E15FA3920486D5900AF09B8 /* Errors */,
 				3E15FA3520486D2D00AF09B8 /* TwitterRouter.swift */,
-				3E15FA10204865BC00AF09B8 /* APIGoogleRouter.swift */,
 				3E15FA202048660900AF09B8 /* APIClient.swift */,
 				3E15FA3C20486E0F00AF09B8 /* APIResult.swift */,
 			);
@@ -392,7 +389,6 @@
 				3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */,
 				3E15FA2C2048667400AF09B8 /* CGPoint+Extension.swift in Sources */,
 				3E15FA212048660900AF09B8 /* APIClient.swift in Sources */,
-				3E15FA11204865BC00AF09B8 /* APIGoogleRouter.swift in Sources */,
 				3E15FA3B20486D6900AF09B8 /* NetworkError.swift in Sources */,
 				3E15FA0C2048650B00AF09B8 /* App.swift in Sources */,
 				3E15FA2A2048667400AF09B8 /* String+Extensions.swift in Sources */,

@@ -97,7 +97,7 @@ extension TwitterRouter: TargetType {
                      forHTTPHeaderField: "Authorization")
 
     request.setValue(self.contentType,
-                     forHTTPHeaderField: "Authorization")
+                     forHTTPHeaderField: "Content-type")
 
     request.timeoutInterval = TimeInterval(10 * 1000)
 
