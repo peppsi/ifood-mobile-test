@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class APIClient {
+class TwitterClient {
   
   ///
   /// Generic Alamofire request
@@ -17,7 +17,7 @@ class APIClient {
   ///
   
   @discardableResult
-  private static func performRequest<T:Decodable>(route:APIRouter,
+  private static func performRequest<T:Decodable>(route:TwitterRouter,
                                                   decoder: JSONDecoder = JSONDecoder(),
                                                   completion:@escaping (Result<T>) -> Void)
     -> DataRequest {
@@ -30,9 +30,9 @@ class APIClient {
   
   // MARK: - API Calls
   
-  static func getCities(completion:@escaping (Result<[TweetMessage]>) -> Void) {
+  static func authorize(completion:@escaping (Result<[TweetMessage]>) -> Void) {
     
-    performRequest(route: APIRouter.tweets,
+    performRequest(route: TwitterRouter.authorize,
                    completion: completion)
     
   }

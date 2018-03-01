@@ -12,7 +12,7 @@
 		3E15FA1A204865E200AF09B8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E15FA1C204865E200AF09B8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E15FA1E204865E200AF09B8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3E15FA212048660900AF09B8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA202048660900AF09B8 /* APIClient.swift */; };
+		3E15FA212048660900AF09B8 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA202048660900AF09B8 /* TwitterClient.swift */; };
 		3E15FA242048665C00AF09B8 /* GCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA232048665C00AF09B8 /* GCButton.swift */; };
 		3E15FA2A2048667400AF09B8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA252048667300AF09B8 /* String+Extensions.swift */; };
 		3E15FA2B2048667400AF09B8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA262048667300AF09B8 /* Date+Extension.swift */; };
@@ -54,7 +54,7 @@
 		3E15FA13204865DB00AF09B8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		3E15FA14204865DB00AF09B8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		3E15FA15204865DB00AF09B8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		3E15FA202048660900AF09B8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3E15FA202048660900AF09B8 /* TwitterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 		3E15FA232048665C00AF09B8 /* GCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCButton.swift; sourceTree = "<group>"; };
 		3E15FA252048667300AF09B8 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		3E15FA262048667300AF09B8 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 			children = (
 				3E15FA3920486D5900AF09B8 /* Errors */,
 				3E15FA3520486D2D00AF09B8 /* TwitterRouter.swift */,
-				3E15FA202048660900AF09B8 /* APIClient.swift */,
+				3E15FA202048660900AF09B8 /* TwitterClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -387,7 +387,7 @@
 				3E15FA3820486D2D00AF09B8 /* TwitterRouter.swift in Sources */,
 				3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */,
 				3E15FA2C2048667400AF09B8 /* CGPoint+Extension.swift in Sources */,
-				3E15FA212048660900AF09B8 /* APIClient.swift in Sources */,
+				3E15FA212048660900AF09B8 /* TwitterClient.swift in Sources */,
 				3E15FA3B20486D6900AF09B8 /* NetworkError.swift in Sources */,
 				3E15FA0C2048650B00AF09B8 /* App.swift in Sources */,
 				3E15FA2A2048667400AF09B8 /* String+Extensions.swift in Sources */,

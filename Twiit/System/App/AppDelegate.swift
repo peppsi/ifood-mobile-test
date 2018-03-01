@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     self.window = window
     /// Start Coordinator
-    app.navigation.start()
+    app.coordinator.start()
     
     return true
   }

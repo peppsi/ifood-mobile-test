@@ -8,21 +8,43 @@
 
 import Foundation
 
-enum NetworkError: Range<Int> {
-
+enum NetworkError {
+  
   /// Default
-  case noInternet = -1
+  case noInternet
 
   // (400...409)
-  case isClientError = (400...409)
+  case isClientError
 
   // (500...599)
-  case isServerError = (500...599)
+  case isServerError
 
   // (300...399)
-  case isRedirection = (300...399)
+  case isRedirection
 
-  
+  // MARK: - Get NetworkError
+
+  func error(int:Int) -> NetworkError {
+
+    switch int {
+
+    case (300...399):
+      return .isRedirection
+
+    case (400...409):
+      return .isClientError
+
+    case (500...599):
+      return .isServerError
+
+    default:
+      return .noInternet
+    }
+
+
+  }
+
+  // MARK: - Get Description
 
   var description: String {
 
@@ -30,6 +52,7 @@ enum NetworkError: Range<Int> {
 
     case .isRedirection:
       return ""
+
     case .isClientError:
       return "Operation unathorized"
 
