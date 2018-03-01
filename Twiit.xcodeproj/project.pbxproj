@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E15FA0C2048650B00AF09B8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0B2048650B00AF09B8 /* App.swift */; };
+		3E15FA0F2048653C00AF09B8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */; };
+		3E15FA11204865BC00AF09B8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA10204865BC00AF09B8 /* APIRouter.swift */; };
+		3E15FA16204865DB00AF09B8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; };
+		3E15FA17204865DB00AF09B8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; };
+		3E15FA18204865DB00AF09B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; };
+		3E15FA19204865E200AF09B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; };
+		3E15FA1A204865E200AF09B8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E15FA1B204865E200AF09B8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; };
+		3E15FA1C204865E200AF09B8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E15FA1D204865E200AF09B8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; };
+		3E15FA1E204865E200AF09B8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E15FA212048660900AF09B8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA202048660900AF09B8 /* APIClient.swift */; };
+		3E15FA242048665C00AF09B8 /* GCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA232048665C00AF09B8 /* GCButton.swift */; };
+		3E15FA2A2048667400AF09B8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA252048667300AF09B8 /* String+Extensions.swift */; };
+		3E15FA2B2048667400AF09B8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA262048667300AF09B8 /* Date+Extension.swift */; };
+		3E15FA2C2048667400AF09B8 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA272048667400AF09B8 /* CGPoint+Extension.swift */; };
+		3E15FA2D2048667400AF09B8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA282048667400AF09B8 /* UIViewController+Extension.swift */; };
+		3E15FA2E2048667400AF09B8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA292048667400AF09B8 /* UIColor+Extension.swift */; };
+		3E15FA302048667F00AF09B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA2F2048667F00AF09B8 /* Constants.swift */; };
 		3E2CF3602048424200795E92 /* TweetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2CF35F2048424200795E92 /* TweetMessage.swift */; };
 		3EAA148A20482B1100353D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA148920482B1100353D32 /* AppDelegate.swift */; };
 		3EAA149120482B1100353D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAA149020482B1100353D32 /* Assets.xcassets */; };
@@ -14,7 +34,37 @@
 		3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA14A5204840A500353D32 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3E15FA1F204865E200AF09B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3E15FA1A204865E200AF09B8 /* Alamofire.framework in Embed Frameworks */,
+				3E15FA1C204865E200AF09B8 /* Nimble.framework in Embed Frameworks */,
+				3E15FA1E204865E200AF09B8 /* Quick.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3E15FA0B2048650B00AF09B8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		3E15FA10204865BC00AF09B8 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		3E15FA13204865DB00AF09B8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		3E15FA14204865DB00AF09B8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		3E15FA15204865DB00AF09B8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3E15FA202048660900AF09B8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3E15FA232048665C00AF09B8 /* GCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCButton.swift; sourceTree = "<group>"; };
+		3E15FA252048667300AF09B8 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		3E15FA262048667300AF09B8 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		3E15FA272048667400AF09B8 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		3E15FA282048667400AF09B8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		3E15FA292048667400AF09B8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3E15FA2F2048667F00AF09B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3E2CF35F2048424200795E92 /* TweetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetMessage.swift; sourceTree = "<group>"; };
 		3EAA148620482B1100353D32 /* Twiit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twiit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAA148920482B1100353D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,17 +79,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E15FA1B204865E200AF09B8 /* Nimble.framework in Frameworks */,
+				3E15FA16204865DB00AF09B8 /* Nimble.framework in Frameworks */,
+				3E15FA1D204865E200AF09B8 /* Quick.framework in Frameworks */,
+				3E15FA17204865DB00AF09B8 /* Quick.framework in Frameworks */,
+				3E15FA18204865DB00AF09B8 /* Alamofire.framework in Frameworks */,
+				3E15FA19204865E200AF09B8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E15FA0A2048641500AF09B8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E15FA322048668E00AF09B8 /* Constants */,
+				3E15FA312048668200AF09B8 /* Buttons */,
+				3E15FA222048663F00AF09B8 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3E15FA0D2048652A00AF09B8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3EAA14A5204840A500353D32 /* AppCoordinator.swift */,
+				3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E15FA12204865DA00AF09B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E15FA15204865DB00AF09B8 /* Alamofire.framework */,
+				3E15FA13204865DB00AF09B8 /* Nimble.framework */,
+				3E15FA14204865DB00AF09B8 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E15FA222048663F00AF09B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E15FA272048667400AF09B8 /* CGPoint+Extension.swift */,
+				3E15FA262048667300AF09B8 /* Date+Extension.swift */,
+				3E15FA252048667300AF09B8 /* String+Extensions.swift */,
+				3E15FA292048667400AF09B8 /* UIColor+Extension.swift */,
+				3E15FA282048667400AF09B8 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E15FA312048668200AF09B8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3E15FA232048665C00AF09B8 /* GCButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3E15FA322048668E00AF09B8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3E15FA2F2048667F00AF09B8 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		3EAA147D20482B1100353D32 = {
 			isa = PBXGroup;
 			children = (
 				3EAA148820482B1100353D32 /* Twiit */,
 				3EAA148720482B1100353D32 /* Products */,
+				3E15FA12204865DA00AF09B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +168,7 @@
 		3EAA148820482B1100353D32 /* Twiit */ = {
 			isa = PBXGroup;
 			children = (
+				3E15FA0A2048641500AF09B8 /* Common */,
 				3EAA14A82048412A00353D32 /* Entities */,
 				3EAA14A72048412400353D32 /* Network */,
 				3EAA14A020482B6700353D32 /* Modules */,
@@ -77,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				3EAA148920482B1100353D32 /* AppDelegate.swift */,
+				3E15FA0B2048650B00AF09B8 /* App.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -108,7 +224,7 @@
 		3EAA14A020482B6700353D32 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3EAA14A5204840A500353D32 /* AppCoordinator.swift */,
+				3E15FA0D2048652A00AF09B8 /* Router */,
 				3EAA14A12048404800353D32 /* Intro */,
 				3EAA14A22048405000353D32 /* Login */,
 				3EAA14A32048405E00353D32 /* TweetList */,
@@ -148,6 +264,8 @@
 		3EAA14A72048412400353D32 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3E15FA10204865BC00AF09B8 /* APIRouter.swift */,
+				3E15FA202048660900AF09B8 /* APIClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -171,6 +289,7 @@
 				3EAA148320482B1100353D32 /* Frameworks */,
 				3EAA148420482B1100353D32 /* Resources */,
 				3E15F9FA20485A2D00AF09B8 /* ShellScript */,
+				3E15FA1F204865E200AF09B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,9 +367,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E15FA2D2048667400AF09B8 /* UIViewController+Extension.swift in Sources */,
 				3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */,
+				3E15FA2C2048667400AF09B8 /* CGPoint+Extension.swift in Sources */,
+				3E15FA212048660900AF09B8 /* APIClient.swift in Sources */,
+				3E15FA11204865BC00AF09B8 /* APIRouter.swift in Sources */,
+				3E15FA0C2048650B00AF09B8 /* App.swift in Sources */,
+				3E15FA2A2048667400AF09B8 /* String+Extensions.swift in Sources */,
+				3E15FA2B2048667400AF09B8 /* Date+Extension.swift in Sources */,
 				3E2CF3602048424200795E92 /* TweetMessage.swift in Sources */,
+				3E15FA0F2048653C00AF09B8 /* BaseNavigationController.swift in Sources */,
+				3E15FA2E2048667400AF09B8 /* UIColor+Extension.swift in Sources */,
+				3E15FA302048667F00AF09B8 /* Constants.swift in Sources */,
 				3EAA148A20482B1100353D32 /* AppDelegate.swift in Sources */,
+				3E15FA242048665C00AF09B8 /* GCButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +511,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RD9CUBAH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Twiit/System/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GMANC.Twiit;
@@ -396,6 +530,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RD9CUBAH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Twiit/System/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GMANC.Twiit;
