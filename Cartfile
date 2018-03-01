@@ -1,0 +1,5 @@
+
+github "Alamofire/Alamofire" "alamofire5"
+
+github "Quick/Quick"
+github "Quick/Nimble"
