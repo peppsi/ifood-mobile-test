@@ -11,8 +11,10 @@ import UIKit
 
 enum BaseURLs {
   
-  static let ttUrl = "http://localhost:8882"
-  static let googleUrl = "http://localhost:8882"
+  static let ttUrl = "https://api.twitter.com"
+  static let ttUrl1 = "https://api.twitter.com/1.1"
+
+  static let googleUrl = "https://language.googleapis.com/v1"
 
 }
 

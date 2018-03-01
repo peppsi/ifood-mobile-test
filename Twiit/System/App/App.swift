@@ -15,7 +15,7 @@ class App {
   
   private let window: UIWindow
   
-  lazy var navigation: Navigation = Navigation(
+  lazy var coordinator: AppCoordinator = AppCoordinator(
     window: self.window,
     navigationController: BaseNavigationController(),
     application: self
@@ -29,7 +29,18 @@ class App {
     #if DEBUG
       print("DEBUG MODE")
     #endif
-    
+
+    checkSecurityIssues()
+  }
+
+  // MARK: - Private
+
+  private func checkSecurityIssues() {
+
+    // Check if device is compromised
+    // If true delete all sensible data from device
+    SecurityManager.shared.detectSecurityIssues()
+
   }
   
 }

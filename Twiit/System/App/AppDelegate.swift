@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let app = App(window: window)
     
     self.window = window
+    /// Start Coordinator
     app.navigation.start()
     
     return true

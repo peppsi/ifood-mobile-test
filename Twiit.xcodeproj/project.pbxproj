@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E15FA0C2048650B00AF09B8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0B2048650B00AF09B8 /* App.swift */; };
 		3E15FA0F2048653C00AF09B8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */; };
-		3E15FA11204865BC00AF09B8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA10204865BC00AF09B8 /* APIRouter.swift */; };
+		3E15FA11204865BC00AF09B8 /* APIGoogleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA10204865BC00AF09B8 /* APIGoogleRouter.swift */; };
 		3E15FA1A204865E200AF09B8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E15FA1C204865E200AF09B8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E15FA1E204865E200AF09B8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -21,11 +21,16 @@
 		3E15FA2D2048667400AF09B8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA282048667400AF09B8 /* UIViewController+Extension.swift */; };
 		3E15FA2E2048667400AF09B8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA292048667400AF09B8 /* UIColor+Extension.swift */; };
 		3E15FA302048667F00AF09B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA2F2048667F00AF09B8 /* Constants.swift */; };
+		3E15FA3820486D2D00AF09B8 /* TwitterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA3520486D2D00AF09B8 /* TwitterRouter.swift */; };
+		3E15FA3B20486D6900AF09B8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA3A20486D6900AF09B8 /* NetworkError.swift */; };
+		3E15FA3D20486E0F00AF09B8 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA3C20486E0F00AF09B8 /* APIResult.swift */; };
 		3E2CF3602048424200795E92 /* TweetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2CF35F2048424200795E92 /* TweetMessage.swift */; };
 		3EAA148A20482B1100353D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA148920482B1100353D32 /* AppDelegate.swift */; };
 		3EAA149120482B1100353D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAA149020482B1100353D32 /* Assets.xcassets */; };
 		3EAA149420482B1100353D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAA149220482B1100353D32 /* LaunchScreen.storyboard */; };
 		3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA14A5204840A500353D32 /* AppCoordinator.swift */; };
+		3EDCDECE204885AB00C58292 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCDECC204885A600C58292 /* Obfuscator.swift */; };
+		3EDCDECF204885AB00C58292 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCDECD204885AB00C58292 /* SecurityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +52,7 @@
 /* Begin PBXFileReference section */
 		3E15FA0B2048650B00AF09B8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		3E15FA10204865BC00AF09B8 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		3E15FA10204865BC00AF09B8 /* APIGoogleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGoogleRouter.swift; sourceTree = "<group>"; };
 		3E15FA13204865DB00AF09B8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		3E15FA14204865DB00AF09B8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		3E15FA15204865DB00AF09B8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		3E15FA282048667400AF09B8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3E15FA292048667400AF09B8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3E15FA2F2048667F00AF09B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3E15FA3520486D2D00AF09B8 /* TwitterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRouter.swift; sourceTree = "<group>"; };
+		3E15FA3A20486D6900AF09B8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3E15FA3C20486E0F00AF09B8 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		3E2CF35F2048424200795E92 /* TweetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetMessage.swift; sourceTree = "<group>"; };
 		3EAA148620482B1100353D32 /* Twiit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twiit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAA148920482B1100353D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +74,8 @@
 		3EAA149320482B1100353D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EAA149520482B1100353D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EAA14A5204840A500353D32 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3EDCDECC204885A600C58292 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		3EDCDECD204885AB00C58292 /* SecurityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +102,8 @@
 		3E15FA0D2048652A00AF09B8 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				3EAA14A5204840A500353D32 /* AppCoordinator.swift */,
 				3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */,
+				3EAA14A5204840A500353D32 /* AppCoordinator.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -136,6 +146,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		3E15FA3920486D5900AF09B8 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3E15FA3A20486D6900AF09B8 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		3EAA147D20482B1100353D32 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +188,7 @@
 		3EAA149B20482B2100353D32 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				3EDCDECB2048857100C58292 /* Security */,
 				3EAA149D20482B3C00353D32 /* Configuration */,
 				3EAA149C20482B3500353D32 /* App */,
 			);
@@ -252,8 +271,11 @@
 		3EAA14A72048412400353D32 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3E15FA10204865BC00AF09B8 /* APIRouter.swift */,
+				3E15FA3920486D5900AF09B8 /* Errors */,
+				3E15FA3520486D2D00AF09B8 /* TwitterRouter.swift */,
+				3E15FA10204865BC00AF09B8 /* APIGoogleRouter.swift */,
 				3E15FA202048660900AF09B8 /* APIClient.swift */,
+				3E15FA3C20486E0F00AF09B8 /* APIResult.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -264,6 +286,15 @@
 				3E2CF35F2048424200795E92 /* TweetMessage.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		3EDCDECB2048857100C58292 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCDECC204885A600C58292 /* Obfuscator.swift */,
+				3EDCDECD204885AB00C58292 /* SecurityManager.swift */,
+			);
+			path = Security;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,10 +387,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E15FA2D2048667400AF09B8 /* UIViewController+Extension.swift in Sources */,
+				3E15FA3820486D2D00AF09B8 /* TwitterRouter.swift in Sources */,
+				3E15FA3D20486E0F00AF09B8 /* APIResult.swift in Sources */,
 				3EAA14A6204840A500353D32 /* AppCoordinator.swift in Sources */,
 				3E15FA2C2048667400AF09B8 /* CGPoint+Extension.swift in Sources */,
 				3E15FA212048660900AF09B8 /* APIClient.swift in Sources */,
-				3E15FA11204865BC00AF09B8 /* APIRouter.swift in Sources */,
+				3E15FA11204865BC00AF09B8 /* APIGoogleRouter.swift in Sources */,
+				3E15FA3B20486D6900AF09B8 /* NetworkError.swift in Sources */,
 				3E15FA0C2048650B00AF09B8 /* App.swift in Sources */,
 				3E15FA2A2048667400AF09B8 /* String+Extensions.swift in Sources */,
 				3E15FA2B2048667400AF09B8 /* Date+Extension.swift in Sources */,
@@ -369,6 +403,8 @@
 				3E15FA302048667F00AF09B8 /* Constants.swift in Sources */,
 				3EAA148A20482B1100353D32 /* AppDelegate.swift in Sources */,
 				3E15FA242048665C00AF09B8 /* GCButton.swift in Sources */,
+				3EDCDECE204885AB00C58292 /* Obfuscator.swift in Sources */,
+				3EDCDECF204885AB00C58292 /* SecurityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

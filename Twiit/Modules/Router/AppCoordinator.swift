@@ -9,42 +9,19 @@
 import Foundation
 import UIKit
 
-class Navigation {
+class AppCoordinator {
   
-  // MARK: - View Names
+  // MARK: - View
   
-  enum ViewNames {
-    
-    // Views
+  enum Views {
     
     case intro
     case login
     case tweetlist
     case tweetDetails
-    
-    // Titles
-    
-    var title:String {
-      
-      switch self {
-        
-      case .intro:
-        return "Welcome to the Vacation Planner!"
-        
-      case .login:
-        return ""
-        
-      case .tweetlist:
-        return ""
-        
-      case .tweetDetails:
-        return ""
 
-      }
-    }
-    
   }
-  
+
   // MARK: - Private
   private let navigationController: UINavigationController
   private let application: App
