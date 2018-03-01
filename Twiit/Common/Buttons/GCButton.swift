@@ -30,8 +30,7 @@ class GCButton: UIButton {
     didSet {
       if isEnabled == true {
         self.alpha = 1.0
-      }
-      else {
+      } else {
         self.alpha = 0.5
       }
     }
@@ -42,15 +41,13 @@ class GCButton: UIButton {
     super.init(frame: frame)
     // set other operations after super.init, if required
   }
-  
-  
+
   override public func awakeFromNib() {
     super.awakeFromNib()
     self.addTarget(self, action: #selector(pulse), for: .touchUpInside)
   }
   
-  required init(coder aDecoder: NSCoder)
-  {
+  required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)!
     
     if let title = self.titleLabel {
@@ -59,7 +56,7 @@ class GCButton: UIButton {
     self.layer.cornerRadius = corner
   }
   
-  func setColor(newColor:UIColor){
+  func setColor(newColor:UIColor) {
     self.color = newColor
     self.tintColor = self.color
   }
@@ -73,13 +70,13 @@ class GCButton: UIButton {
     }
   }
   
-  func setShadowLayer(){
+  func setShadowLayer() {
     
     shadowLayer = CAShapeLayer()
     shadowLayer.path = UIBezierPath(roundedRect: bounds,
                                     cornerRadius: corner).cgPath
     
-    let bgColor:UIColor = self.backgroundColor ?? Colors.VPBlue
+    let bgColor:UIColor = self.backgroundColor ?? Colors.TTBlue
     
     shadowLayer.fillColor = bgColor.cgColor
     
@@ -93,7 +90,7 @@ class GCButton: UIButton {
     
   }
   
-  func setBGColor(color:UIColor){
+  func setBGColor(color:UIColor) {
     
     self.backgroundColor = color
     
@@ -106,7 +103,7 @@ class GCButton: UIButton {
     
     let enabled = self.isEnabled
     
-    if(show){
+    if(show) {
       
       self.isEnabled = true
       
@@ -126,7 +123,7 @@ class GCButton: UIButton {
       
       self.setTitle("", for: .normal)
       
-    }else{
+    } else {
       
       self.setTitle(self.title, for: .normal)
       indicator.stopAnimating()
@@ -139,20 +136,18 @@ class GCButton: UIButton {
   
   // MARK: - Touches
   
-  @objc func pulse(){
+  @objc func pulse() {
     
     UIView.animate(withDuration: TimeInterval(0.1), animations: {
       
       self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
       
-    },completion:{completion in
+    },completion: { _ in
       UIView.animate(withDuration: TimeInterval(0.1), animations: { () -> Void in
         
         self.transform = CGAffineTransform(scaleX: 1, y: 1)
       })
     })
   }
-  
-  
-}
 
+}

@@ -10,14 +10,8 @@
 		3E15FA0C2048650B00AF09B8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0B2048650B00AF09B8 /* App.swift */; };
 		3E15FA0F2048653C00AF09B8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA0E2048653C00AF09B8 /* BaseNavigationController.swift */; };
 		3E15FA11204865BC00AF09B8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA10204865BC00AF09B8 /* APIRouter.swift */; };
-		3E15FA16204865DB00AF09B8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; };
-		3E15FA17204865DB00AF09B8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; };
-		3E15FA18204865DB00AF09B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; };
-		3E15FA19204865E200AF09B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; };
 		3E15FA1A204865E200AF09B8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA15204865DB00AF09B8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3E15FA1B204865E200AF09B8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; };
 		3E15FA1C204865E200AF09B8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA13204865DB00AF09B8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3E15FA1D204865E200AF09B8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; };
 		3E15FA1E204865E200AF09B8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15FA14204865DB00AF09B8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E15FA212048660900AF09B8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA202048660900AF09B8 /* APIClient.swift */; };
 		3E15FA242048665C00AF09B8 /* GCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FA232048665C00AF09B8 /* GCButton.swift */; };
@@ -79,12 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E15FA1B204865E200AF09B8 /* Nimble.framework in Frameworks */,
-				3E15FA16204865DB00AF09B8 /* Nimble.framework in Frameworks */,
-				3E15FA1D204865E200AF09B8 /* Quick.framework in Frameworks */,
-				3E15FA17204865DB00AF09B8 /* Quick.framework in Frameworks */,
-				3E15FA18204865DB00AF09B8 /* Alamofire.framework in Frameworks */,
-				3E15FA19204865E200AF09B8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

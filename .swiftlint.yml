@@ -2,6 +2,8 @@ disabled_rules: # rule identifiers to exclude from running
   - colon
   - comma
   - control_statement
+  - trailing_whitespace
+
 opt_in_rules: # some rules are only opt-in
   - empty_count
   # Find all the available rules by running:
@@ -39,7 +41,7 @@ type_name:
   excluded: iPhone # excluded via string
 identifier_name:
   min_length: # only min_length
-    error: 3 # only error
+    warning: 3 # only error
   excluded: # excluded via string array
     - id
     - URL

@@ -18,7 +18,7 @@ extension String {
     
     if dateStr != "" {
       return dateFormatter.date(from: dateStr) ?? Date()
-    }else{
+    } else {
       return Date(timeIntervalSince1970: 0)
     }
   }

@@ -45,12 +45,11 @@ class Navigation {
     
   }
   
-  //MARK: - Private
-  
+  // MARK: - Private
   private let navigationController: UINavigationController
   private let application: App
   
-  //MARK: - Lifecycle
+  // MARK: - Lifecycle
   
   init(window: UIWindow, navigationController: UINavigationController, application: App) {
     
@@ -61,13 +60,13 @@ class Navigation {
     
   }
   
-  //MARK: - Public
+  // MARK: - Public
   
   func start() {
     self.showIntro()
   }
   
-  //MARK: - Private
+  // MARK: - Private
   
   // Controller #1 Intro
   private func showIntro() {

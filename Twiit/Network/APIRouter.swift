@@ -38,7 +38,6 @@ enum APIRouter: URLRequestConvertible {
     case .tweets:
       return "\(BaseURLs.googleUrl)/cities/"
 
-      
 //    case .weatherCondition(let id, let year):
 //      return "\(BaseURL.url)/cities/\(id)/year/\(year)"
     }
@@ -71,4 +70,3 @@ enum APIRouter: URLRequestConvertible {
   }
   
 }
-

@@ -38,5 +38,4 @@ enum Colors {
 
   static let TTRed = UIColor(hexString: "F0F0F0")
 
-
 }

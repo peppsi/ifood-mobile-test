@@ -17,34 +17,30 @@ protocol Themeable {
 
 class BaseNavigationController: UINavigationController {
   
-  //MARK: - Properties
+  // MARK: - Properties
   
   var defaultNavBarBackgroundColor: UIColor = .white
   var defaultNavBarTintColor: UIColor = .black
   var hideBackButtonText: Bool = true
   
-  //MARK: - Private
+  // MARK: - Private
   
   private var backButtonTextCache = [UIViewController: String?]()
   
-  //MARK: - Lifecycle
-  
+  // MARK: - Lifecycle
   required convenience init() {
-    
     self.init(navigationBarClass: nil, toolbarClass: nil)
     self.navigationBar.shadowImage = UIImage()
-    
-    self.navigationBar.tintColor = Colors.VPBlue
-    
+    self.navigationBar.tintColor = Colors.TTBlue
   }
   
-  //MARK: - Navigation
+  // MARK: - Navigation
   
   override func pushViewController(_ viewController: UIViewController, animated: Bool) {
     
     self.cacheTitleAndHide()
-    let root = (self.viewControllers.count == 0)
-    self.styleViewController(vc: viewController, root: root)
+    let root = (self.viewControllers.isEmpty)
+    self.styleViewController(viewController: viewController, root: root)
     super.pushViewController(viewController, animated: animated)
   }
   
@@ -52,50 +48,42 @@ class BaseNavigationController: UINavigationController {
     
     let destinationVC = self.viewControllers.dropLast().last
     let root = (self.viewControllers.dropLast().count == 1)
-    self.uncacheTitleAndShow(vc: destinationVC)
-    self.styleViewController(vc: destinationVC, root: root)
+    self.uncacheTitleAndShow(viewController: destinationVC)
+    self.styleViewController(viewController: destinationVC, root: root)
     return super.popViewController(animated: animated)
     
   }
   
-  //MARK: - Styling
+  // MARK: - Styling
   
-  private func styleViewController(vc: UIViewController?, root: Bool) {
+  private func styleViewController(viewController: UIViewController?, root: Bool) {
     
-    if let vc = vc as? Themeable {
+    if let vc = viewController as? Themeable {
       
       let backgroundColor = vc.navigationBarBackgroundColor ?? self.defaultNavBarBackgroundColor
-      
       self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-      
       self.navigationBar.barTintColor = backgroundColor
       self.navigationBar.isTranslucent = true
-      
       self.navigationBar.tintColor = vc.navigationBarTintColor ?? self.defaultNavBarTintColor
     }
   }
   
-  //MARK: - Back Button
+  // MARK: - Back Button
   
   private func cacheTitleAndHide() {
-    
     guard self.hideBackButtonText else { return }
-    
     if let vc = self.viewControllers.last {
       self.backButtonTextCache[vc] = vc.title
       vc.title = ""
     }
-    
   }
   
-  private func uncacheTitleAndShow(vc: UIViewController?) {
+  private func uncacheTitleAndShow(viewController: UIViewController?) {
     guard self.hideBackButtonText else { return }
-    
     guard
-      let vc = vc,
+      let vc = viewController,
       let cachedTitle = self.backButtonTextCache[vc]
       else { return }
-    
     vc.title = cachedTitle
     self.backButtonTextCache[vc] = nil
   }

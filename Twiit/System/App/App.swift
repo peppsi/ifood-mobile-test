@@ -11,7 +11,7 @@ import UIKit
 
 class App {
   
-  //MARK: - Dependencies
+  // MARK: - Dependencies
   
   private let window: UIWindow
   
@@ -21,7 +21,7 @@ class App {
     application: self
   )
   
-  //MARK: - Lifecycle
+  // MARK: - Lifecycle
   
   init(window: UIWindow) {
     self.window = window
