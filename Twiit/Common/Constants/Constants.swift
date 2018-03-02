@@ -34,10 +34,10 @@ enum ContentType: String {
 
 enum Colors {
   
-  static let TTBlue = UIColor(hexString: "80CBC4")
+  static let TTBGBlue = UIColor(hexString: "c0deed")
   
-  static let TTLightGray = UIColor(hexString: "F0F0F0")
+  static let TTDarkBlue = UIColor(hexString: "0084b4")
 
-  static let TTRed = UIColor(hexString: "F0F0F0")
+  static let TTLightBlue = UIColor(hexString: "1dcaff")
 
 }
