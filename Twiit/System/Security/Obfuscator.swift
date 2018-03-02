@@ -15,14 +15,12 @@ class Obfuscator {
   /// The salt used to obfuscate and reveal the string.
   private var salt: String = ""
   
-  
   // MARK: - Initialization
   
   init(withSalt salt: [AnyObject]) {
     self.salt = salt.description
   }
-  
-  
+
   // MARK: - Instance Methods
   
   /**

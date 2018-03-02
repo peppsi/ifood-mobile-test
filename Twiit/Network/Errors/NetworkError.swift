@@ -41,7 +41,6 @@ enum NetworkError {
       return .noInternet
     }
 
-
   }
 
   // MARK: - Get Description

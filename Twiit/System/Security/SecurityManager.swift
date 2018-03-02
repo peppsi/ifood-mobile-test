@@ -15,13 +15,13 @@ final class SecurityManager {
   
   let salt = [AppDelegate.self, NSObject.self, NSString.self]
   
-  var o:Obfuscator
+  var obfs:Obfuscator
   
   // Init
   
   private init() {
     
-    o = Obfuscator(withSalt: salt)
+    obfs = Obfuscator(withSalt: salt)
     
   }
   
@@ -37,18 +37,17 @@ final class SecurityManager {
   
   public func obfuscate(message:String) -> [UInt8] {
     
-    let bytes = o.bytesByObfuscatingString(string: message)
+    let bytes = obfs.bytesByObfuscatingString(string: message)
     
     return bytes
   }
   
   public func reveal(bytes: [UInt8]) -> String {
     
-    let value = o.reveal(key: bytes)
+    let value = obfs.reveal(key: bytes)
     
     return value
   }
-
   
   // MARK: - Public Methods
 
@@ -130,6 +129,5 @@ final class SecurityManager {
       defaults.removeObject(forKey: key)
     }
   }
-  
-  
+
 }

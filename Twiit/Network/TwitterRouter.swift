@@ -50,7 +50,7 @@ extension TwitterRouter {
     }
   }
 
-  var contentType: String  {
+  var contentType: String {
     switch self {
 
     case .authorize:
@@ -62,7 +62,6 @@ extension TwitterRouter {
   }
 
   // MARK: - Request
-
 
   public func asURLRequest() throws -> URLRequest {
 
@@ -80,9 +79,6 @@ extension TwitterRouter {
         dict["max_id"] = lastId
 
         return dict
-
-      default:
-        return [:]
       }
 
     }()
