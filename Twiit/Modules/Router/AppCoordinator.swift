@@ -47,13 +47,27 @@ class AppCoordinator {
   
   // Controller #1 Intro
   private func showIntro() {
-    
+
+    let viewController = IntroViewController()
+
+    self.navigationController.pushViewController(viewController, animated: true)
+
+    // Show next screen
+    viewController.showNext = {
+       [weak self] in
+      self?.showLogin()
+    }
+
   }
   
   // Controller #2 Login
   
   private func showLogin() {
-    
+
+    #if DEBUG
+      print("Show Next")
+    #endif
+
   }
   
   // Controller #3 TweetList

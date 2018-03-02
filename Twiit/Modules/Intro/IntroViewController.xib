@@ -6,17 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroViewController" customModule="Twiit" customModuleProvider="target">
             <connections>
+                <outlet property="imgCloud1" destination="5bI-Ze-9rw" id="hQn-C8-UUl"/>
+                <outlet property="imgCloud2" destination="djA-ym-GDm" id="rDt-KC-IHB"/>
+                <outlet property="imgLogo" destination="7EO-gg-dDo" id="sbh-ZU-781"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,26 +24,45 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otC-XH-7DK" customClass="GCButton" customModule="Twiit" customModuleProvider="target">
-                    <rect key="frame" x="52" y="321" width="270" height="45"/>
-                    <color key="backgroundColor" red="0.1137254902" green="0.79215686269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_TTLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7EO-gg-dDo">
+                    <rect key="frame" x="112" y="258" width="150" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="45" id="2uj-fW-LuD"/>
-                        <constraint firstAttribute="width" constant="270" id="HCY-IQ-bi4"/>
+                        <constraint firstAttribute="width" secondItem="7EO-gg-dDo" secondAttribute="height" multiplier="1:1" id="Q46-6q-CPx"/>
+                        <constraint firstAttribute="height" constant="150" id="wJ0-xO-9yQ"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                    <state key="normal" title="Start">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_Cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="5bI-Ze-9rw">
+                    <rect key="frame" x="259" y="108" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="5bI-Ze-9rw" secondAttribute="height" multiplier="1:1" id="Cre-7V-QYe"/>
+                        <constraint firstAttribute="width" constant="100" id="Lss-yY-er9"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_cloudOutline" translatesAutoresizingMaskIntoConstraints="NO" id="djA-ym-GDm">
+                    <rect key="frame" x="16" y="458" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="rwb-oT-75v"/>
+                        <constraint firstAttribute="width" secondItem="djA-ym-GDm" secondAttribute="height" multiplier="1:1" id="xpf-MC-oFb"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.75294117647058822" green="0.87058823529411766" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="otC-XH-7DK" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fUD-Cr-qRx"/>
-                <constraint firstItem="otC-XH-7DK" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="u9E-aT-z1K"/>
+                <constraint firstItem="djA-ym-GDm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3Ol-t4-rqb"/>
+                <constraint firstItem="djA-ym-GDm" firstAttribute="width" secondItem="djA-ym-GDm" secondAttribute="height" multiplier="1:1" id="3ew-25-ceh"/>
+                <constraint firstItem="7EO-gg-dDo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LQw-yy-kRJ"/>
+                <constraint firstItem="djA-ym-GDm" firstAttribute="top" secondItem="7EO-gg-dDo" secondAttribute="bottom" constant="50" id="PHT-f4-j4A"/>
+                <constraint firstItem="7EO-gg-dDo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c5C-Rs-1gJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5bI-Ze-9rw" secondAttribute="trailing" constant="16" id="mDz-5m-gh4"/>
+                <constraint firstItem="7EO-gg-dDo" firstAttribute="top" secondItem="5bI-Ze-9rw" secondAttribute="bottom" constant="50" id="xke-Rc-csm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-84" y="13"/>
         </view>
     </objects>
+    <resources>
+        <image name="icn_Cloud2" width="138" height="49"/>
+        <image name="icn_TTLogo" width="500" height="406"/>
+        <image name="icn_cloudOutline" width="74" height="35"/>
+    </resources>
 </document>

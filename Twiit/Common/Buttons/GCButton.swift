@@ -76,7 +76,7 @@ class GCButton: UIButton {
     shadowLayer.path = UIBezierPath(roundedRect: bounds,
                                     cornerRadius: corner).cgPath
     
-    let bgColor:UIColor = self.backgroundColor ?? Colors.TTBlue
+    let bgColor:UIColor = self.backgroundColor ?? Colors.TTBGBlue
     
     shadowLayer.fillColor = bgColor.cgColor
     

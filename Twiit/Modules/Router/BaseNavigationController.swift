@@ -31,7 +31,7 @@ class BaseNavigationController: UINavigationController {
   required convenience init() {
     self.init(navigationBarClass: nil, toolbarClass: nil)
     self.navigationBar.shadowImage = UIImage()
-    self.navigationBar.tintColor = Colors.TTBlue
+    self.navigationBar.tintColor = Colors.TTBGBlue
   }
   
   // MARK: - Navigation
